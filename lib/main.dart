@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:test1/design/button_widget.dart';
-import 'package:test1/design/constants.dart';
-import 'package:test1/page/product_page.dart';
+import 'package:get/get.dart';
+import 'package:test1/ui/page/product_page.dart';
+import 'package:test1/ui/widgets/button_widget.dart';
 
-import 'design/button_widget-wihouttext.dart';
-import 'design/button_widget_icontexticon.dart';
-import 'design/button_widget_withouticon.dart';
+import 'constants/colors.dart';
+import 'constants/myicons.dart';
+import 'ui/widgets/button_widget_iconortext.dart';
+import 'ui/widgets/button_widget_icontexticon.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -58,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(
               height: 20,
             ),
-            CustomButton3(
+            CustomButton2(
                 height: 54,
                 width: size.width - 320,
                 backGroundcolor: COLOR_RED_BUTTON,
@@ -84,24 +85,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             CustomButton(
                 width: size.width - 50,
-                backGroundColor: Colors.white,
-                icon: const Icon(
-                  MyIcons.vector,
-                  size: 18,
-                ),
-                text: const Text(
-                  "Go to App",
-                  style: TextStyle(fontSize: 18, color: COLOR_BLACK),
-                ),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => ProductPage()));
-                }),
-            SizedBox(
-              height: 20,
-            ),
-            CustomButton(
-                width: size.width - 50,
                 backGroundColor: COLOR_GREY_BUTTON,
                 text: const Text(
                   "Try Again",
@@ -110,6 +93,21 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: const Icon(
                   MyIcons.vector1,
                   size: 18,
+                ),
+                onPressed: () {}),
+            SizedBox(
+              height: 20,
+            ),
+            CustomButton(
+                width: size.width - 50,
+                backGroundColor: Colors.white,
+                icon: const Icon(
+                  MyIcons.vector,
+                  size: 18,
+                ),
+                text: const Text(
+                  "Go to App",
+                  style: TextStyle(fontSize: 18, color: COLOR_BLACK),
                 ),
                 onPressed: () {}),
             SizedBox(
@@ -127,8 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextStyle(fontSize: 18, color: COLOR_WHITE),
                 ),
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => ProductPage()));
+                  Get.to(ProductPage());
                 }),
           ],
         ),
