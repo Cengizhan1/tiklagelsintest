@@ -5,8 +5,8 @@ import 'package:test1/ui/widgets/button_widget.dart';
 import 'package:test1/ui/widgets/text_widget.dart';
 import 'package:test1/ui/widgets/textformfield_widget.dart';
 
+import '../../assets/myicons.dart';
 import '../../constants/colors.dart';
-import '../../constants/myicons.dart';
 
 class ProductPage extends StatelessWidget {
   const ProductPage({Key? key}) : super(key: key);

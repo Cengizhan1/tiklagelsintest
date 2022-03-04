@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../assets/myicons.dart';
 import '../../constants/colors.dart';
-import '../../constants/myicons.dart';
 
 class RadioButtonDesign extends StatefulWidget {
   final Text option1;

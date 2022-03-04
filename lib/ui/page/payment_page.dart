@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:test1/ui/widgets/adress_widget.dart';
 import 'package:test1/ui/widgets/text_widget.dart';
 
+import '../../assets/myicons.dart';
 import '../../constants/colors.dart';
-import '../../constants/myicons.dart';
 import '../widgets/button_widget_basket.dart';
 import '../widgets/radiobutton_widget.dart';
 

@@ -4,8 +4,8 @@ import 'package:get/get.dart';
 import 'package:test1/ui/page/product_page.dart';
 import 'package:test1/ui/widgets/button_widget.dart';
 
+import 'assets/myicons.dart';
 import 'constants/colors.dart';
-import 'constants/myicons.dart';
 import 'ui/widgets/button_widget_iconortext.dart';
 import 'ui/widgets/button_widget_icontexticon.dart';
 
